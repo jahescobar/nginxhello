@@ -1,0 +1,17 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: nginx
+  command: 
+  - echo "building ..."
+-name: publish
+ image: plugins/docker
+ settings:
+    username:
+       from_secret: u_docker
+    password:
+       from_secret: p_docker
+    repo: jahescobar/nginxhello
+    tags: "test_1"
