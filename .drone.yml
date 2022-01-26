@@ -6,9 +6,9 @@ steps:
   image: nginx
   command: 
   - echo "building ..."
--name: publish
- image: plugins/docker
- settings:
+- name: publish
+  image: plugins/docker
+  settings:
     username:
        from_secret: u_docker
     password:
