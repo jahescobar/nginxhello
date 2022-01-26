@@ -13,5 +13,5 @@ steps:
        from_secret: u_docker
     password:
        from_secret: p_docker
-    repo: jahescobar/nginxhello
+    repo: zelfick/nginxhello
     tags: "test_1"
