@@ -14,4 +14,4 @@ steps:
     password:
        from_secret: p_docker
     repo: zelfick/nginxhello
-    tags: "test_3"
+    tags: "test_4"
